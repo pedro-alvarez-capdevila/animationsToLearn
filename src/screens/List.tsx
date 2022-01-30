@@ -30,6 +30,21 @@ const screens = [
     subtitle: 'An example of using the Button.js components.',
     target: 'ButtonDemo',
   },
+  {
+    title: 'InterpolateColors',
+    subtitle: 'InterpolateColors',
+    target: 'InterpolateColors',
+  },
+  {
+    title: 'InterpolateWithScrollView',
+    subtitle: 'InterpolateWithScrollView',
+    target: 'InterpolateWithScrollView',
+  },
+  {
+    title: 'TheBasicsOfPanGestureHandler',
+    subtitle: 'TheBasicsOfPanGestureHandler',
+    target: 'TheBasicsOfPanGestureHandler',
+  },
 ];
 
 type Props = {
