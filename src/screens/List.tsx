@@ -45,6 +45,11 @@ const screens = [
     subtitle: 'TheBasicsOfPanGestureHandler',
     target: 'TheBasicsOfPanGestureHandler',
   },
+  {
+    title: 'SwipeToDelete',
+    subtitle: 'SwipeToDelete',
+    target: 'SwipeToDelete',
+  },
 ];
 
 type Props = {

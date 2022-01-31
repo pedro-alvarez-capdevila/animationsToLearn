@@ -6,6 +6,7 @@ import { TextDemo, ButtonDemo, FormDemo } from '../screens/Demos';
 import InterpolateWithScrollView from '../screens/InterpolateWithScrollView';
 import InterpolateColors from '../screens/InterpolateColors';
 import TheBasicsOfPanGestureHandler from '../screens/TheBasicsOfPanGestureHandler';
+import SwipeToDelete from '../screens/SwipeToDelete';
 
 export type MainStackParams = {
   List: undefined;
@@ -15,6 +16,7 @@ export type MainStackParams = {
   InterpolateColors: undefined;
   InterpolateWithScrollView: undefined;
   TheBasicsOfPanGestureHandler: undefined;
+  SwipeToDelete: undefined;
 };
 
 const MainStack = createStackNavigator<MainStackParams>();
@@ -40,17 +42,22 @@ export const Main = () => (
     <MainStack.Screen
       name="InterpolateColors"
       component={InterpolateColors}
-      options={{ headerTitle: 'Button Demo', headerShown: false }}
+      options={{ headerShown: false }}
     />
     <MainStack.Screen
       name="InterpolateWithScrollView"
       component={InterpolateWithScrollView}
-      options={{ headerTitle: 'Button Demo', headerShown: false }}
+      options={{ headerShown: false }}
     />
     <MainStack.Screen
       name="TheBasicsOfPanGestureHandler"
       component={TheBasicsOfPanGestureHandler}
-      options={{ headerTitle: 'Button Demo', headerShown: false }}
+      options={{ headerShown: false }}
+    />
+    <MainStack.Screen
+      name="SwipeToDelete"
+      component={SwipeToDelete}
+      options={{ headerShown: false }}
     />
   </MainStack.Navigator>
 );
