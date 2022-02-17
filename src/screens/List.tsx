@@ -50,11 +50,15 @@ const screens = [
     subtitle: 'SwipeToDelete',
     target: 'SwipeToDelete',
   },
-
   {
     title: 'CircleWithLoop',
     subtitle: 'CircleWithLoop',
     target: 'CircleWithLoop',
+  },
+  {
+    title: 'CustomSwitch',
+    subtitle: 'CustomSwitch',
+    target: 'CustomSwitch',
   },
 ];
 

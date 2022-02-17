@@ -8,6 +8,7 @@ import InterpolateColors from '../screens/InterpolateColors';
 import TheBasicsOfPanGestureHandler from '../screens/TheBasicsOfPanGestureHandler';
 import SwipeToDelete from '../screens/SwipeToDelete';
 import CircleWithLoop from '../screens/CircleWithLoop';
+import CustomSwitch from '../screens/CustomSwitch';
 
 export type MainStackParams = {
   List: undefined;
@@ -19,6 +20,7 @@ export type MainStackParams = {
   TheBasicsOfPanGestureHandler: undefined;
   SwipeToDelete: undefined;
   CircleWithLoop: undefined;
+  CustomSwitch: undefined;
 };
 
 const MainStack = createStackNavigator<MainStackParams>();
@@ -49,7 +51,7 @@ export const Main = () => (
     <MainStack.Screen
       name="InterpolateWithScrollView"
       component={InterpolateWithScrollView}
-      options={{ headerShown: false }}
+      options={{ }}
     />
     <MainStack.Screen
       name="TheBasicsOfPanGestureHandler"
@@ -64,6 +66,11 @@ export const Main = () => (
     <MainStack.Screen
       name="CircleWithLoop"
       component={CircleWithLoop}
+      options={{ headerShown: false }}
+    />
+    <MainStack.Screen
+      name="CustomSwitch"
+      component={CustomSwitch}
       options={{ headerShown: false }}
     />
   </MainStack.Navigator>
