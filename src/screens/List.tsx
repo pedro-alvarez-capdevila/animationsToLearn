@@ -50,6 +50,12 @@ const screens = [
     subtitle: 'SwipeToDelete',
     target: 'SwipeToDelete',
   },
+
+  {
+    title: 'CircleWithLoop',
+    subtitle: 'CircleWithLoop',
+    target: 'CircleWithLoop',
+  },
 ];
 
 type Props = {
