@@ -16,21 +16,6 @@ const styles = StyleSheet.create({
 
 const screens = [
   {
-    title: 'Text',
-    subtitle: 'An example of using the Text.js components.',
-    target: 'TextDemo',
-  },
-  {
-    title: 'Form',
-    subtitle: 'An example of using the Form.js components.',
-    target: 'FormDemo',
-  },
-  {
-    title: 'Button',
-    subtitle: 'An example of using the Button.js components.',
-    target: 'ButtonDemo',
-  },
-  {
     title: 'InterpolateColors',
     subtitle: 'InterpolateColors',
     target: 'InterpolateColors',
@@ -59,6 +44,11 @@ const screens = [
     title: 'CustomSwitch',
     subtitle: 'CustomSwitch',
     target: 'CustomSwitch',
+  },
+  {
+    title: 'SlidingCounter',
+    subtitle: 'SlidingCounter',
+    target: 'SlidingCounter',
   },
 ];
 
