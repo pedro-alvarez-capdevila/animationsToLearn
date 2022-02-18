@@ -2,7 +2,6 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import { List } from '../screens/List';
-import { TextDemo, ButtonDemo, FormDemo } from '../screens/Demos';
 import InterpolateWithScrollView from '../screens/InterpolateWithScrollView';
 import InterpolateColors from '../screens/InterpolateColors';
 import TheBasicsOfPanGestureHandler from '../screens/TheBasicsOfPanGestureHandler';
@@ -10,6 +9,7 @@ import SwipeToDelete from '../screens/SwipeToDelete';
 import CircleWithLoop from '../screens/CircleWithLoop';
 import CustomSwitch from '../screens/CustomSwitch';
 import SlidingCounter from '../screens/SlidingCounter';
+import CustomBottomSheet from '../screens/CustomBottomSheet';
 
 export type MainStackParams = {
   List: undefined;
@@ -23,6 +23,7 @@ export type MainStackParams = {
   CircleWithLoop: undefined;
   CustomSwitch: undefined;
   SlidingCounter: undefined;
+  CustomBottomSheet: undefined;
 };
 
 const MainStack = createStackNavigator<MainStackParams>();
@@ -62,6 +63,11 @@ export const Main = () => (
     <MainStack.Screen
       name="SlidingCounter"
       component={SlidingCounter}
+      options={{ headerShown: false }}
+    />
+    <MainStack.Screen
+      name="CustomBottomSheet"
+      component={CustomBottomSheet}
       options={{ headerShown: false }}
     />
   </MainStack.Navigator>

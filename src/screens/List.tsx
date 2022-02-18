@@ -50,6 +50,12 @@ const screens = [
     subtitle: 'SlidingCounter',
     target: 'SlidingCounter',
   },
+
+  {
+    title: 'CustomBottomSheet',
+    subtitle: 'CustomBottomSheet',
+    target: 'CustomBottomSheet',
+  },
 ];
 
 type Props = {
