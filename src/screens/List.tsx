@@ -10,7 +10,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.background,
-    paddingVertical: 20,
   },
 });
 
@@ -59,6 +58,11 @@ const screens = [
     title: 'PerspectiveMenu',
     subtitle: 'PerspectiveMenu',
     target: 'PerspectiveMenu',
+  },
+  {
+    title: 'ColorPicker',
+    subtitle: 'ColorPicker',
+    target: 'ColorPicker',
   },
 ];
 

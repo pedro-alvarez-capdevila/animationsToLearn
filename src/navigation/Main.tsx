@@ -11,6 +11,7 @@ import CustomSwitch from '../screens/CustomSwitch';
 import SlidingCounter from '../screens/SlidingCounter';
 import CustomBottomSheet from '../screens/CustomBottomSheet';
 import PerspectiveMenu from '../screens/PerspectiveMenu';
+import ColorPicker from '../screens/ColorPicker';
 
 export type MainStackParams = {
   List: undefined;
@@ -26,6 +27,7 @@ export type MainStackParams = {
   SlidingCounter: undefined;
   CustomBottomSheet: undefined;
   PerspectiveMenu: undefined;
+  ColorPicker: undefined;
 };
 
 const MainStack = createStackNavigator<MainStackParams>();
@@ -75,6 +77,12 @@ export const Main = () => (
     <MainStack.Screen
       name="PerspectiveMenu"
       component={PerspectiveMenu}
+      options={{ headerShown: false }}
+    />
+
+    <MainStack.Screen
+      name="ColorPicker"
+      component={ColorPicker}
       options={{ headerShown: false }}
     />
   </MainStack.Navigator>
