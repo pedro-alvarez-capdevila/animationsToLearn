@@ -50,11 +50,15 @@ const screens = [
     subtitle: 'SlidingCounter',
     target: 'SlidingCounter',
   },
-
   {
     title: 'CustomBottomSheet',
     subtitle: 'CustomBottomSheet',
     target: 'CustomBottomSheet',
+  },
+  {
+    title: 'PerspectiveMenu',
+    subtitle: 'PerspectiveMenu',
+    target: 'PerspectiveMenu',
   },
 ];
 

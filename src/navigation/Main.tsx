@@ -10,6 +10,7 @@ import CircleWithLoop from '../screens/CircleWithLoop';
 import CustomSwitch from '../screens/CustomSwitch';
 import SlidingCounter from '../screens/SlidingCounter';
 import CustomBottomSheet from '../screens/CustomBottomSheet';
+import PerspectiveMenu from '../screens/PerspectiveMenu';
 
 export type MainStackParams = {
   List: undefined;
@@ -24,6 +25,7 @@ export type MainStackParams = {
   CustomSwitch: undefined;
   SlidingCounter: undefined;
   CustomBottomSheet: undefined;
+  PerspectiveMenu: undefined;
 };
 
 const MainStack = createStackNavigator<MainStackParams>();
@@ -68,6 +70,11 @@ export const Main = () => (
     <MainStack.Screen
       name="CustomBottomSheet"
       component={CustomBottomSheet}
+      options={{ headerShown: false }}
+    />
+    <MainStack.Screen
+      name="PerspectiveMenu"
+      component={PerspectiveMenu}
       options={{ headerShown: false }}
     />
   </MainStack.Navigator>
